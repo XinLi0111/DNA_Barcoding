@@ -5,7 +5,7 @@
 **First of all!!!**
 ```python
 '重要，对于barcoding研究使用，尽量做到同种序列有多个，否则影响很大'
-所有软件对于未鉴定正确的结果，无论如何都会聚类到一种上，并不会给出'未鉴定'的结果，所有结果可以作为鉴定参考
+大部分软件对于未鉴定正确的结果，无论如何都会聚类到一种上，并不会给出'未鉴定'的结果，所有结果可以作为鉴定参考
 ```
 
 
@@ -171,5 +171,4 @@ GGAGCTTGATCAGGAATAATTGGAACTTCATTAAGTATCTTAATCCGAGCTGAATTAGGTCATCCAGGTGCATTAATTGG
 
 > 类似的还有BLOG软件，但经常报错
 
-> CAOS（character attribute organization system）假定一个类群（如物种）必然具备一些特有个的共同特征，这些特征不会出现在其它近缘类群中。该方法通过在DNA序列中寻找那些关键的种内鉴别位点来划分物种，而不关心进化速率等系统发育信息，可以用于多基因序列（Rach *et al*., 2008; Sarkar *et al*., 2008). [引自蔡彦朋，2016博士论文]
 
