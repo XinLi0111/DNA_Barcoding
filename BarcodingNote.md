@@ -38,8 +38,12 @@
 #library(BarcodingR)
 # for large fasta file, read.fas() package:phyloch is suggest
 
-ref <- read.dna("ref.fasta", format = "fasta") # read fasta file from your work directory
-que <- fasta2DNAbin("que.fasta") #not recommand, slow
+#ref <- read.dna("ref.fasta", format = "fasta") # read fasta file from your work directory
+#que <- fasta2DNAbin("que.fasta") #not recommand, slow
+
+list <- sample.ref(read.dna(file.choose(),format = "fasta"),sample.level = "species")
+ref <- list$ref.selected
+que <- list$ref.left
 bp <- barcoding.spe.identify(ref, que, method = "bpNewTraining") #method = "fuzzyId" or "Bayesian"
 bp1 <- barcoding.spe.identify(ref, que, method = "fuzzyId")
 bp2 <- barcoding.spe.identify(ref, que, method = "Bayesian")
